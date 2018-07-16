@@ -1,4 +1,70 @@
 
+
+
+:root {
+    --header-bg:#793a46;
+    --title-color: #793a46;
+    --link-color: #07D;
+    --link-color-hover: #f00;
+
+
+
+    --btn-top1-bg:#35b925;
+    --btn-top1-bg-hover:#abd02a;
+    --btn-top1-color:#fff;
+
+    --btn-top2-bg:#ec7724;
+    --btn-top2-bg-hover:#ff8f22;
+    --btn-top2-color:#fff;
+
+
+    --table-bg: #e6e6e6;
+    --table-cell-bg: #d2cfcf;
+    --table-img-bg:#b20426;
+
+
+    --btn-playCasino-bg:#20c51a;
+    --btn-playCasino-border:#168212;
+    --btn-playCasino-text-color: #fff;
+
+    --btn-playCasino-bg-hover: #1db329;
+    --btn-playCasino-border-hover:rgba(0,0,0,.16);
+    --btn-playCasino-text-color-hover: #fff;
+
+
+
+    --btn-obzorCasino-bg:#4661b8;
+    --btn-obzorCasino-border:#224ac7;
+    --btn-obzorCasino-text-color: #fff;
+
+    --btn-obzorCasino-bg-hover:#4661b8;
+    --btn-obzorCasino-border-hover: #4661b8;
+    --btn-obzorCasino-text-color-hover: #e6be6e;
+
+
+    --btn-otziv-bg:inherit;
+    --btn-otziv-border:#b20426;
+    --btn-otziv-text-color: #872b3a;
+
+    --btn-otziv-bg-hover:#4661b8;
+    --btn-otziv-border-hover: #4661b8;
+    --btn-otziv-text-color-hover: #e6be6e;
+
+
+    --footer-bg:#793a46;
+    --footer-link-color:#f1c525;
+    --footer-text-color: #fff;
+    --copyright-bg: #3c141c;
+    --copyright-text-color:#c1bebf;
+
+
+
+
+
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -18,41 +84,64 @@ h1 {
     text-align: center;
     margin-top: 54px;
     font-size: 28px;
-    color: #793a46;
+    color: var(--title-color);
+}
+
+a{
+    color: var(--link-color);
+}
+a:hover{
+    color: var(--link-color-hover);
 }
 
 #header {
     height: 52px;
     top: 0;
     left: 0;
-    background: #793a46;
+    background-color: var(--header-bg);
     position: fixed;
     width: 100%;
-    z-index: 9990;
+}
+
+
+.container{
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 
 .uk-navbar {
-    background: #793a46;
-    border-bottom: solid 2px #5d1d29;
-    width: 1200px;
+    background-color: var(--header-bg);
+    /*width: 1200px;*/
     margin: 0 auto;
     height: 50px;
 }
 
-.uk-navbar-center {
-    background: #793a46;
-    color: #fff;
-    text-align: center;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*.uk-navbar-center {*/
 
-.uk-navbar-center a {
-    color: #fff;
-    text-shadow: none;
-}
+    /*background-color: #793a46;*/
+
+    /*text-align: center;*/
+    /*max-width: 100%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+
+/*}*/
+
+/*.uk-navbar-center p{*/
+    /*position: relative;*/
+    /*top: 0;*/
+    /*z-index: 1000;*/
+    /*color: #fff;*/
+/*}*/
+
+
+/*.uk-navbar-center a {*/
+    /*color: #fff;*/
+    /*text-shadow: none;*/
+/*}*/
 
 .uk-navbar-nav > li > a {
     border-left: solid 1px #9a0422;
@@ -86,26 +175,15 @@ h1 {
 }
 
 .copyright {
-    background: #3c141c;
+    background: var(--copyright-bg);
     height: 40px;
-    color: #c1bebf;
+    color: var(--copyright-text-color);
     text-align: center;
     line-height: 45px;
 }
 
-.fip-fence {
-    background-image: linear-gradient(to bottom right, transparent 50.5%, #6a2331 50.5%), linear-gradient(to bottom left, transparent 50.5%, #6a2331 50.5%);
-    background-repeat: repeat-x, repeat-x;
-    background-position: 10px 0, 10px 0;
-    background-size: 10px 10px, 10px 10px;
-    position: relative;
-    z-index: 0;
-    top: -10px;
-    height: 10px;
-}
-
 #footer {
-    background: #793a46;
+    background: var(--footer-bg);
     margin-top: -10px;
 }
 
@@ -119,7 +197,7 @@ h1 {
 }
 
 .footermenu li a {
-    color: #f1c525;
+    color: var(--footer-link-color);
     font-size: 14px;
     line-height: 26px;
 }
@@ -131,7 +209,7 @@ h1 {
     padding-top: 0 !important;
     width: 100%;
     display: block;
-    color: #fff !important;
+    color: var(--footer-text-color) !important;
     text-transform: uppercase;
 }
 
@@ -203,7 +281,7 @@ h1 {
     width: 150px;
     display: inline-block;
     box-shadow: 0 4px 0 #904816, 0 5px 10px rgba(0, 0, 0, .35);
-    background: #ec7724;
+    background: var(--btn-top2-bg);
     text-transform: uppercase;
     line-height: 50px;
     font-size: 15px;
@@ -211,12 +289,12 @@ h1 {
     border: none;
     box-sizing: border-box;
     text-align: center;
-    color: #fff;
+    color: var(--btn-top2-color);
     cursor: pointer;
 }
 
 .btn_comeIn:hover {
-    background: #ff8f22;
+    background: var(--btn-top2-bg-hover);
     transition: 0.3s;
     text-decoration: none;
 }
@@ -225,7 +303,7 @@ h1 {
     width: 150px;
     display: inline-block;
     box-shadow: 0 4px 0 #237919, 0 5px 10px rgba(0, 0, 0, .35);
-    background: #35b925;
+    background-color: var(--btn-top1-bg);
     text-transform: uppercase;
 
     line-height: 50px;
@@ -235,21 +313,21 @@ h1 {
     border: none;
     cursor: pointer;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--btn-top1-color);
 }
 
 .btn_into:hover {
-    background: #abd02a;
+    background: var(--btn-top1-bg-hover);
     transition: 0.3s;
     text-decoration: none;
 }
 
-.mobilebutt {
-    width: 100%;
-    margin-top: 0 !important;
-    background: #b32323;
-    z-index: 999999;
-}
+/*.mobilebutt {*/
+    /*width: 100%;*/
+    /*margin-top: 0 !important;*/
+    /*background: #b32323;*/
+    /*z-index: 999999;*/
+/*}*/
 
 .mobibtn {
     width: 50%;
@@ -275,24 +353,27 @@ h1 {
 }
 
 .infosubm {
-    background: #4661b8;
+    min-height: 50px;
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--btn-obzorCasino-bg);
     padding: 7px 10px;
     font-size: 18px;
     text-transform: uppercase;
     text-shadow: none;
-    color: #fff;
-    border: 2px solid #224ac7
+    color: var(--btn-obzorCasino-text-color);
+    border: 2px solid var(--btn-obzorCasino-border);
 }
 
 .infosubm:hover {
-    color: #e6be6e;
+    color: var(--btn-obzorCasino-text-color-hover);
     transition: .3s;
-    background: #4661b8;
-    border: 2px solid #b20426;
+    background-color: var(--btn-obzorCasino-bg-hover);
+    border: 2px solid var(--btn-obzorCasino-border-hover);;
 }
 
 .tarifimg {
-    background: #e6e6e6;
+    background-color: var(--table-bg);
     margin-top: 2px !important;
     padding: 10px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -307,7 +388,7 @@ h1 {
 }
 
 .tarifimg img {
-    background: #b20426;
+    background-color: var(--table-img-bg);
     padding: 2px;
     display: block;
     margin: 0 auto
@@ -329,7 +410,6 @@ h1 {
 
 .tarifimg tr {
     line-height: 17px;
-    background: #c8c8c8
 }
 
 .flag {
@@ -359,7 +439,7 @@ h1 {
 }
 
 .casino-table tr {
-    background: #d2cfcf;
+    background-color: var(--table-cell-bg);
 }
 
 .bonusname {
@@ -385,11 +465,6 @@ h1 {
     padding: 0;
 }
 
-.cas-but {
-    max-width: 200px;
-    min-height: 50px;
-}
-
 .casimg {
     margin-top: 5px !important;
 }
@@ -405,26 +480,45 @@ h1 {
 .otziv {
     width: 100%;
     display: block;
-    border: 2px dotted #b20426;
+    background-color: var(--btn-otziv-bg);
+    border: 2px dotted var(--btn-otziv-border);
     margin-top: 33px;
     border-radius: 10px;
     min-height: 30px;
     line-height: 26px;
-    color: #872b3a;
+    color: var(--btn-otziv-text-color);
     font-size: 17px;
     text-align: center;
-
 }
+
+.otziv:hover,
+.otziv:focus{
+    background-color: var(--btn-otziv-bg-hover);
+    border-color: var(--btn-otziv-border-hover);
+    color: var(--btn-otziv-text-color-hover);
+}
+
 
 .playcbutton {
-    background: #20c51a;
+    width: 100%;
+    max-width: 200px;
+    min-height: 50px;
+    background-color: var(--btn-playCasino-bg);
     padding: 10px 3px;
     font-size: 18px;
-    color: #fff;
+    color: var(--btn-playCasino-text-color);
     text-transform: uppercase;
-    border: 3px solid #168212;
+    border: 3px solid var(--btn-playCasino-border);
     margin-bottom: 10px;
 }
+
+.playcbutton:hover,
+.playcbutton:focus{
+    background-color: var(--btn-playCasino-bg-hover);
+    color: var(--btn-playCasino-text-color-hover);
+    border-color: var(--btn-playCasino-border-hover);
+}
+
 
 #casino {
     min-height: 800px;
@@ -547,9 +641,7 @@ h1 {
         margin-left: 14px;
     }
 
-    .tarifimg > div > .fip-fence {
-        display: none;
-    }
+
 
     .logotas {
         text-align: center;
@@ -590,7 +682,8 @@ h1 {
         margin-top: 10px;
     }
 
-    .cas-but {
+    .playcbutton,
+    .infosubm{
         max-width: 100%;
         margin-bottom: 5px;
     }
@@ -604,9 +697,6 @@ h1 {
         margin-left: 3px !important;
     }
 
-    .fip-fence {
-        display: none;
-    }
 
     .flag {
         margin-left: 0 !important;

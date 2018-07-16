@@ -12,4 +12,8 @@ window.onload = function () {
     }
 
     likeLink($(".otziv"));
-}
+    likeLink($(".btn_into"));
+    likeLink($(".btn_comeIn"));
+
+
+};
